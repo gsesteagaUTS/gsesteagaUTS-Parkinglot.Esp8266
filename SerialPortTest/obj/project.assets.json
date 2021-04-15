@@ -537,11 +537,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\OITTTIIA\\Documents\\DotNet\\esp8266serial\\SerialPortTest\\SerialPortTest.csproj",
+      "projectUniqueName": "C:\\Users\\OITTTIIA\\Documents\\DotNet\\esp8266serial\\SerialPortTest\\SerialPortTest.csproj",
       "projectName": "SerialPortTest",
-      "projectPath": "c:\\Users\\OITTTIIA\\Documents\\DotNet\\esp8266serial\\SerialPortTest\\SerialPortTest.csproj",
+      "projectPath": "C:\\Users\\OITTTIIA\\Documents\\DotNet\\esp8266serial\\SerialPortTest\\SerialPortTest.csproj",
       "packagesPath": "C:\\Users\\OITTTIIA\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\OITTTIIA\\Documents\\DotNet\\esp8266serial\\SerialPortTest\\obj\\",
+      "outputPath": "C:\\Users\\OITTTIIA\\Documents\\DotNet\\esp8266serial\\SerialPortTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -597,7 +597,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

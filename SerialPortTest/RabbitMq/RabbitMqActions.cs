@@ -23,7 +23,7 @@ namespace SerialPortTest.RabbitMq
             channel.ExchangeDeclare(rabbitMqConfigs.Exchange, ExchangeType.Topic, true, false, null);
 
             //Declaramos la cola que enlazaremos al exchange
-            channel.QueueDeclare(rabbitMqConfigs.QueueName, durable: true, exclusive: false, autoDelete: false, arguments: null);
+            channel.QueueDeclare(rabbitMqConfigs.QueueName, durable: true, exclusive: false, autoDelete: true, arguments: null);
 
             //Enlazamos la cola y el exchange anteriormente creado
             channel.QueueBind(rabbitMqConfigs.QueueName, rabbitMqConfigs.Exchange, rabbitMqConfigs.RoutingKey, null);
@@ -54,12 +54,12 @@ namespace SerialPortTest.RabbitMq
         {
             var queueName = rabbitMqConfigs.QueueName;
             //Declaramos la cola a la que nos conectaremos para enviar la información al RoutingKey amq.topic
-            channel.QueueDeclare(queueName, durable: true, exclusive: false, autoDelete: false, arguments: null);
+            //channel.QueueDeclare(queueName, durable: true, exclusive: false, autoDelete: true, arguments: null);
 
             var body = Encoding.UTF8.GetBytes(message);//Convertimos el mensaje en arreglo de bytes, solo así se puede enviar a RabbitMq
-            channel.BasicPublish(exchange: "amq.topic", routingKey: "DataFromArduino", basicProperties: null, body: body);//Publicamos en RabbirMq al exchange amq.topic, con el tema (routingKey) DataFromArduino
+            channel.BasicPublish(exchange: "amq.topic", routingKey: "DataFromAspNetCore", basicProperties: null, body: body);//Publicamos en RabbirMq al exchange amq.topic, con el tema (routingKey) DataFromArduino
 
-            Thread.Sleep(1000);
+            //Thread.Sleep(500);
 
         }
     }

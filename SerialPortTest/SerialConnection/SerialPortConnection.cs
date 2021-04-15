@@ -9,7 +9,6 @@ namespace SerialPortTest.SerialConnection
 
         
         private SerialPort serialPort;
-
         private string ComPort;
         private int Baud;
         public bool IsOpen => serialPort != null ? serialPort.IsOpen : false ;

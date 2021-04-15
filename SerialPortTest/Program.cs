@@ -36,7 +36,7 @@ namespace SerialPortTest
             Console.WriteLine("Data will send to rabbitMq:");
             Console.WriteLine(data);
             //Metodo que publica a RabbitMq
-            QueueProducer.Publish(channel, data);
+            //QueueProducer.Publish(channel, data);
         }
 
 
